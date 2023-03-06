@@ -127,7 +127,7 @@ function Header() {
                     <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
                         {currentUser ? (
                             <Image
-                                src="https://p16-sign-sg.tiktokcdn.com/tos-alisg-avt-0068/3a94326876590fe5c356b595f5da12b6~c5_300x300.webp?x-expires=1677988800&x-signature=Hxa4tfEtPRnrevkgsIq8MPwyn4U%3D"
+                                src=""
                                 className={cx('user-avatar')}
                                 alt="Le"
                                 fallback="https://cdnmedia.baotintuc.vn/Upload/DmtgOUlHWBO5POIHzIwr1A/files/2022/12/26/review-avatar-2-26122022.jpg"
