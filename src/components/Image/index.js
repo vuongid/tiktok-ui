@@ -1,3 +1,4 @@
+import ProTypes from 'prop-types';
 import { forwardRef, useState } from 'react';
 import classNames from 'classnames';
 import styles from './Image.module.scss';
@@ -20,5 +21,12 @@ const Image = forwardRef(({ src = '', className, alt, fallback: customFallback =
         />
     );
 });
+
+Image.propTypes = {
+    src: ProTypes.string,
+    className: ProTypes.string,
+    alt: ProTypes.string,
+    customFallback: ProTypes.string,
+};
 
 export default Image;
