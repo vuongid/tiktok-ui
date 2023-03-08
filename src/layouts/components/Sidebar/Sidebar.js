@@ -10,6 +10,8 @@ import {
     UserGroupActiveIcon,
     UserGroupIcon,
 } from '~/components/Icons/Icons';
+import SuggestedAccounts from '~/components/SuggestedAccounts';
+import AccountItem from '~/components/SuggestedAccounts/AccountItem';
 
 const cx = classNames.bind(styles);
 
@@ -26,6 +28,18 @@ function Sidebar() {
                 />
                 <MenuItem title="Live" to={routes.live} icon={<LiveIcon />} activeIcon={<LiveActiveIcon />} />
             </Menu>
+            <SuggestedAccounts label="Suggested accounts">
+                <AccountItem popper />
+                <AccountItem popper />
+                <AccountItem popper />
+                <AccountItem popper />
+            </SuggestedAccounts>
+            <SuggestedAccounts label="Following accounts">
+                <AccountItem />
+                <AccountItem />
+                <AccountItem />
+                <AccountItem />
+            </SuggestedAccounts>
         </aside>
     );
 }
